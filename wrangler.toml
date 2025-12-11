@@ -6,7 +6,7 @@ pages_build_output_dir = "./dist"
 
 [[secrets]]
 API_TOKEN = "${CLOUDFLARE_API_TOKEN}"
-CLOUDFLARE_API_TOKEN = "RagAM5Qa7GuU0JBhmsYAp61hCLMS64b5LRb4uqe5"
+CLOUDFLARE_API_TOKEN = "4_BTmFRA-KGiBpM73as8tZY13uhdBBEP8ZbpHhzK"
 
 # For future backend integration with Cloudflare Workers
 # Uncomment and configure when ready to add backend functionality
