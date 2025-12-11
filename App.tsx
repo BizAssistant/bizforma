@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { BusinessWizard } from './components/BusinessWizard';
+import globalstyles from 'styles';
 
 export default function App() {
   return (
