@@ -4,8 +4,7 @@ compatibility_date = "2024-12-11"
 # Pages configuration
 pages_build_output_dir = "./dist"
 
-API_TOKEN = "RagAM5Qa7GuU0JBhmsYAp61hCLMS64b5LRb4uqe5"
-CF_API_TOKEN = "RagAM5Qa7GuU0JBhmsYAp61hCLMS64b5LRb4uqe5"
+API_TOKEN = "${CLOUDFLARE_API_TOKEN}"
 CLOUDFLARE_API_TOKEN = "RagAM5Qa7GuU0JBhmsYAp61hCLMS64b5LRb4uqe5"
 
 # For future backend integration with Cloudflare Workers
