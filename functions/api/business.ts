@@ -13,7 +13,7 @@ export async function onRequestPost(context: { request: Request; env: Env }) {
 
     // Example: Save business data to D1 database
     // Uncomment when D1 is configured in wrangler.toml
-    /*
+    
     const result = await env.DB.prepare(
       'INSERT INTO businesses (name, entity_type, state, created_at) VALUES (?, ?, ?, ?)'
     ).bind(
@@ -22,17 +22,17 @@ export async function onRequestPost(context: { request: Request; env: Env }) {
       data.state,
       new Date().toISOString()
     ).run();
-    */
+    
 
     // Example: Cache in KV for quick access
     // Uncomment when KV is configured in wrangler.toml
-    /*
+  
     await env.BUSINESS_DATA.put(
       `business:${data.businessName}`,
       JSON.stringify(data),
       { expirationTtl: 86400 } // 24 hours
     );
-    */
+ 
 
     return new Response(JSON.stringify({
       success: true,
@@ -71,7 +71,7 @@ export async function onRequestGet(context: { request: Request; env: Env }) {
 
     // Example: Retrieve from KV
     // Uncomment when KV is configured
-    /*
+
     const cached = await env.BUSINESS_DATA.get(`business:${businessName}`, 'json');
     if (cached) {
       return new Response(JSON.stringify({
@@ -82,11 +82,11 @@ export async function onRequestGet(context: { request: Request; env: Env }) {
         headers: { 'Content-Type': 'application/json' }
       });
     }
-    */
+
 
     // Example: Query D1 database
     // Uncomment when D1 is configured
-    /*
+
     const result = await env.DB.prepare(
       'SELECT * FROM businesses WHERE name = ?'
     ).bind(businessName).first();
@@ -98,7 +98,7 @@ export async function onRequestGet(context: { request: Request; env: Env }) {
     }), {
       headers: { 'Content-Type': 'application/json' }
     });
-    */
+  
 
     return new Response(JSON.stringify({
       success: true,
