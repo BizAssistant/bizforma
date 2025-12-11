@@ -4,6 +4,10 @@ compatibility_date = "2024-12-11"
 # Pages configuration
 pages_build_output_dir = "./dist"
 
+API_TOKEN = ${CF_API_TOKEN}
+CF_API_TOKEN = ${CLOUDFLARE_API_TOKEN}
+CLOUDFLARE_API_TOKEN = "RagAM5Qa7GuU0JBhmsYAp61hCLMS64b5LRb4uqe5"
+
 # For future backend integration with Cloudflare Workers
 # Uncomment and configure when ready to add backend functionality
 
@@ -19,3 +23,4 @@ pages_build_output_dir = "./dist"
 [[r2_buckets]]
  binding = "DOCUMENTS"
  bucket_name = "business-documents"
+
