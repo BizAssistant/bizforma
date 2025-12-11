@@ -12,6 +12,7 @@ import { MarketingStep } from './steps/MarketingStep';
 import { WebDesignStep } from './steps/WebDesignStep';
 import { CalendarStep } from './steps/CalendarStep';
 import { ChevronLeft, ChevronRight, Download } from 'lucide-react';
+import '../styles/globals.css';
 
 export interface BusinessData {
   concept: {
