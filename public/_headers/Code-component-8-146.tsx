@@ -1,14 +1,17 @@
 # Cloudflare Pages Headers Configuration
 # https://developers.cloudflare.com/pages/platform/headers/
 
+Cache-Control: public, max-age=3600
+CDN-Cache-Control: max-age=86400
+
 # Security headers for all pages
 /*
   X-Frame-Options: SAMEORIGIN
   X-Content-Type-Options: nosniff
   X-XSS-Protection: 1; mode=block
   Referrer-Policy: strict-origin-when-cross-origin
-  Permissions-Policy: camera=(), microphone=(), geolocation=()
-
+  Permissions-Policy: camera=(), microphone=(), geolocation=() 
+  
 # Cache static assets for 1 year
 /assets/*
   Cache-Control: public, max-age=31536000, immutable
