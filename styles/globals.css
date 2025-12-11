@@ -3,44 +3,44 @@
 
 :root {
   --font-size: 16px;
-  --background: #0a0a1a;
-  --foreground: oklch(0.95 0 0);
-  --card: rgba(255, 255, 255, 0.03);
-  --card-foreground: oklch(0.95 0 0);
-  --popover: rgba(20, 20, 40, 0.95);
-  --popover-foreground: oklch(0.95 0 0);
-  --primary: #6366f1;
-  --primary-foreground: oklch(1 0 0);
-  --secondary: rgba(99, 102, 241, 0.1);
-  --secondary-foreground: oklch(0.95 0 0);
-  --muted: rgba(255, 255, 255, 0.05);
-  --muted-foreground: #a0a0b8;
-  --accent: rgba(139, 92, 246, 0.15);
-  --accent-foreground: oklch(0.95 0 0);
-  --destructive: #ef4444;
-  --destructive-foreground: #ffffff;
-  --border: rgba(255, 255, 255, 0.1);
-  --input: rgba(255, 255, 255, 0.05);
-  --input-background: rgba(255, 255, 255, 0.03);
-  --switch-background: rgba(255, 255, 255, 0.2);
+  --background: #EDE8DA; /* warm sand */
+  --foreground: #8B4513; /* dark brown for text */
+  --card: #F5F0E6; /* light sand for cards */
+  --card-foreground: #A0522D; /* deep taupe for card text */
+  --popover: #EDE8DA; /* warm sand for popovers */
+  --popover-foreground: #8B4513; /* dark brown for popover text */
+  --primary: #D2B48C; /* mid taupe for primary actions */
+  --primary-foreground: #8B4513; /* dark brown for primary text */
+  --secondary: #EDE8DA; /* warm sand for secondary */
+  --secondary-foreground: #8B4513; /* dark brown for secondary text */
+  --muted: #D2B48C; /* mid taupe for muted elements */
+  --muted-foreground: #A0522D; /* deep taupe for muted text */
+  --accent: #D2B48C; /* mid taupe for accents */
+  --accent-foreground: #8B4513; /* dark brown for accent text */
+  --destructive: #A0522D; /* deep taupe for destructive actions */
+  --destructive-foreground: #F5F0E6; /* light sand for destructive text */
+  --border: #D2B48C; /* mid taupe for borders */
+  --input: #EDE8DA; /* warm sand for inputs */
+  --input-background: #F5F0E6; /* light sand for input backgrounds */
+  --switch-background: #D2B48C; /* mid taupe for switches */
   --font-weight-medium: 500;
   --font-weight-normal: 400;
-  --ring: rgba(99, 102, 241, 0.5);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.875rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #030213;
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  
+  --ring: #D2B48C; /* mid taupe for focus rings */
+  --chart-1: #D2B48C;
+  --chart-2: #EDE8DA;
+  --chart-3: #A0522D;
+  --chart-4: #8B4513;
+  --chart-5: #F5F0E6;
+  --radius: 0; /* square edges */
+  --sidebar: #EDE8DA;
+  --sidebar-foreground: #8B4513;
+  --sidebar-primary: #EDE8DA;
+  --sidebar-primary-foreground: #8B4513;
+  --sidebar-accent: #D2B48C;
+  --sidebar-accent-foreground: #8B4513;
+  --sidebar-border: #D2B48C;
+  --sidebar-ring: #D2B48C;
+
   /* Glass & Glow Design Tokens */
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.15);
