@@ -1,4 +1,6 @@
 // tailwind.config.js
+import "styles/globals.css";
+
 module.exports = {
   theme: {
     extend: {
