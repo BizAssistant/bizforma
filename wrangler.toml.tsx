@@ -7,15 +7,15 @@ pages_build_output_dir = "./dist"
 # For future backend integration with Cloudflare Workers
 # Uncomment and configure when ready to add backend functionality
 
-# [[d1_databases]]
-# binding = "DB"
-# database_name = "business_formation_db"
-# database_id = "your-database-id"
+[[d1_databases]]
+ binding = "DB"
+ database_name = "business_formation_db"
+ database_id = "9c285090-890e-48d6-9ae7-673411d98646"
 
-# [[kv_namespaces]]
-# binding = "BUSINESS_DATA"
-# id = "your-kv-namespace-id"
+[[kv_namespaces]]
+ binding = "BUSINESS_DATA"
+ id = "9a984875d2624155b0d8eaa3c021a694"
 
-# [[r2_buckets]]
-# binding = "DOCUMENTS"
-# bucket_name = "business-documents"
+[[r2_buckets]]
+ binding = "DOCUMENTS"
+ bucket_name = "business-documents"
