@@ -1,5 +1,4 @@
-@use "tailwindcss";
-
+import "tailwindcss";
 @custom-variant dark (&:is(.dark *));
 
 :root {
@@ -119,6 +118,20 @@
     @apply bg-background text-foreground;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    padding: 15px;
+  }
+
+  @media (min-width: 768px) {
+    body {
+      padding: 20px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    body {
+      padding: 24px;
+    }
   }
 }
 
@@ -169,6 +182,42 @@
       line-height: 1.5;
     }
   }
+}
+
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+  display: none;
+  overflow: auto;
+}
+
+.menu-overlay.active {
+  display: block;
+}
+
+.menu-content {
+  background: var(--card);
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 0;
+  width: 90%;
+  max-width: 400px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin: 15px 0;
+  padding: 15px;
+  position: relative;
+  z-index: 1;
 }
 
 html {
