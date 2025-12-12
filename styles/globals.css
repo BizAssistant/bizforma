@@ -1,6 +1,4 @@
-
-
-import "tailwindcss";
+import tailwindcss from '@tailwindcss/vitrmap';
 @custom-variant dark (&:is(.dark *));
 
 :root {
