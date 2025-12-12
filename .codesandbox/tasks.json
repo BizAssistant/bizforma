@@ -1,0 +1,81 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "Installing Dependencies",
+      "command": "npm install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "dev": {
+      "name": "dev",
+      "command": "npm run dev",
+      "runAtStart": true,
+      "preview": {
+        "port": 3000
+      }
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "preview": {
+      "name": "preview",
+      "command": "npm run preview",
+      "runAtStart": false
+    },
+    "deploy": {
+      "name": "deploy",
+      "command": "npm run deploy",
+      "runAtStart": false
+    },
+    "cf:dev": {
+      "name": "cf:dev",
+      "command": "npm run cf:dev",
+      "runAtStart": false
+    },
+    "db:create": {
+      "name": "db:create",
+      "command": "npm run db:create",
+      "runAtStart": false
+    },
+    "db:init": {
+      "name": "db:init",
+      "command": "npm run db:init",
+      "runAtStart": false
+    },
+    "db:init:local": {
+      "name": "db:init:local",
+      "command": "npm run db:init:local",
+      "runAtStart": false
+    },
+    "db:query": {
+      "name": "db:query",
+      "command": "npm run db:query",
+      "runAtStart": false
+    },
+    "db:query:local": {
+      "name": "db:query:local",
+      "command": "npm run db:query:local",
+      "runAtStart": false
+    },
+    "kv:create": {
+      "name": "kv:create",
+      "command": "npm run kv:create",
+      "runAtStart": false
+    },
+    "setup": {
+      "name": "setup",
+      "command": "npm run setup",
+      "runAtStart": false
+    },
+    "logs": {
+      "name": "logs",
+      "command": "npm run logs",
+      "runAtStart": false
+    }
+  }
+}
